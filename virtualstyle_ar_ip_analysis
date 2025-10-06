@@ -1,0 +1,39 @@
+digraph IP_Analysis {
+	rankdir=TB size="12,10"
+	node [fontsize=10 shape=rectangle style=filled]
+	Patents [label="Patents
+AR algorithms, virtual try-on 3D mapping, AI personalization, gesture recognition, AR rendering" fillcolor=lightgreen]
+	Copyright [label="Copyright
+UI/UX design, 3D models, digital avatars, AR scenes, code" fillcolor=lightgreen]
+	Trademarks [label="Trademarks
+Platform name, logos, slogans, app icons" fillcolor=lightgreen]
+	"Trade Secrets" [label="Trade Secrets
+Proprietary algorithms, analytics methods, internal pipelines, rendering optimizations" fillcolor=lightgreen]
+	"Design Rights" [label="Design Rights
+AR interface elements, virtual clothing layouts, avatar styles, AR effects" fillcolor=lightgreen]
+	Patents_ex [label="Patents Example
+AI virtual fitting room; AR try-on checkout integration" fillcolor=lightcoral]
+	Copyright_ex [label="Copyright Example
+3D models of handbags, jewelry, shoes, makeup; AR animations" fillcolor=lightcoral]
+	Trademarks_ex [label="Trademarks Example
+GlamAR / VirtualStyle AR logo on app stores and marketing" fillcolor=lightcoral]
+	"Trade Secrets_ex" [label="Trade Secrets Example
+ML models for size prediction; low-end device AR optimization" fillcolor=lightcoral]
+	"Design Rights_ex" [label="Design Rights Example
+Virtual dressing room layouts; unique avatar clothing combinations" fillcolor=lightcoral]
+	Patents -> Patents_ex
+	Copyright -> Copyright_ex
+	Trademarks -> Trademarks_ex
+	"Trade Secrets" -> "Trade Secrets_ex"
+	"Design Rights" -> "Design Rights_ex"
+	Cons_0 [label="Patentability – Only technical innovations are patentable" fillcolor=lightblue]
+	Patents_ex -> Cons_0
+	Cons_1 [label="Copyright – Automatic but registration strengthens enforcement" fillcolor=lightblue]
+	Copyright_ex -> Cons_1
+	Cons_2 [label="Trademarks – Must be actively used and defended" fillcolor=lightblue]
+	Trademarks_ex -> Cons_2
+	Cons_3 [label="Trade Secrets – Require strict internal confidentiality measures" fillcolor=lightblue]
+	"Trade Secrets_ex" -> Cons_3
+	Cons_4 [label="Global IP – Protect in key markets (US, EU, India) if scaling internationally" fillcolor=lightblue]
+	"Design Rights_ex" -> Cons_4
+}

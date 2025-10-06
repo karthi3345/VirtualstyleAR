@@ -1,0 +1,17 @@
+// GlamAR Exemplar Product Flow
+digraph {
+	A [label="User Visits App/Website"]
+	B [label="Select Product Category"]
+	C [label="AR/AI Virtual Try-On"]
+	D [label="AI-Powered Recommendations"]
+	E [label="Add to Cart / Purchase"]
+	F [label="Save or Share Look"]
+	G [label="Analytics Dashboard (for Brand)"]
+	A -> B [label="Select category"]
+	B -> C [label="Try-on product"]
+	C -> D [label="Receive personalized suggestions"]
+	D -> E [label="Decide to buy"]
+	C -> F [label="Option to save/share"]
+	E -> G [label="Track conversion"]
+	F -> G [label="Track engagement"]
+}
